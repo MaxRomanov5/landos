@@ -1,0 +1,181 @@
+.container {
+  padding-bottom: 112px;
+  max-width: 390px;
+  margin: 0 auto;
+}
+.logoWrap {
+  padding: 47px 32px 38px;
+  width: 181px;
+}
+.heroCardsWrap {
+  margin: 0 auto;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  max-width: 390px;
+}
+.firstBorderWrap,
+.secondBorderWrap,
+.thirdBorderWrap {
+  width: 143px;
+  height: 163px;
+  padding: 13px;
+  display: block;
+  padding: 1px;
+  border-radius: 9px;
+  background: linear-gradient(to right top, #272d1899, #bef73d33);
+  position: absolute;
+}
+.firstBorderWrap {
+  bottom: 42px;
+  left: 30px;
+  transform: rotate(-32deg);
+  z-index: 5;
+}
+.secondBorderWrap {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.thirdBorderWrap {
+  bottom: 22px;
+  right: 30px;
+  transform: rotate(29deg);
+  z-index: 1;
+}
+.firstImageWrap,
+.secondImageWrap,
+.thirdImageWrap {
+  background: linear-gradient(0deg, #121212, #121212),
+    linear-gradient(
+      251.11deg,
+      rgba(92, 133, 0, 0.2) -70.73%,
+      rgba(146, 211, 0, 0) 107.45%
+    );
+  border-radius: 9px;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+}
+.heroImg {
+  width: 117px;
+  height: 137px;
+  object-fit: cover;
+}
+.title {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58.09px;
+  letter-spacing: -2px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.descr {
+  margin-bottom: 24px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #ffffffbf;
+}
+.button {
+  background-color: #bef73d;
+  border: none;
+  padding: 20px;
+  border-radius: 28px;
+  text-align: center;
+  width: 100%;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.contentWrap {
+  padding-left: 32px;
+  padding-right: 54px;
+  max-width: 390px;
+}
+@media screen and (min-width: 767px) {
+  .container {
+    max-width: 700px;
+    padding-top: 40px;
+  }
+  .wrap {
+    display: flex;
+    align-items: center;
+  }
+  .heroCardsWrap {
+    order: 1;
+    width: 100%;
+  }
+  .contentWrap {
+    padding: 0;
+    width: 300px;
+  }
+  .logoWrap {
+    padding: 0;
+    margin-bottom: 50px;
+    width: 139px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+  .firstBorderWrap,
+  .secondBorderWrap,
+  .thirdBorderWrap {
+    width: 258px;
+    height: 294px;
+  }
+  .heroImg {
+    width: 100%;
+    height: 100%;
+  }
+  .heroCardsWrap {
+    width: 600px;
+    max-width: 100%;
+    height: 340px;
+  }
+  .firstBorderWrap {
+    top: -20px;
+    left: 50px;
+  }
+  .thirdBorderWrap {
+    top: -20px;
+    right: -30px;
+  }
+  .secondBorderWrap {
+    top: -90px;
+    transform: translateX(-40%);
+  }
+  .button{
+      max-width: 240px;
+  }
+  .logoWrap{
+    margin-bottom: 150px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+  .title {
+    font-weight: 900;
+    line-height: 90px;
+    max-width: 550px;
+    font-size: 86px;
+  }
+  .contentWrap{
+      max-width: 100%;
+      width: 480px;
+  }
+  
+}
